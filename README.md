@@ -14,8 +14,3 @@ To run the application
 * Javascript
 * React
 * Bootstrap classes
-
-## Deployment
-Deployed on Github Pages
-
-You can see the website [here](https://adarraji.github.io/robofriends/)
