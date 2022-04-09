@@ -8,7 +8,7 @@ const App = () => {
     return (
         <div className="App">
             <Tabs />
-            <Table users={users} />
+            {/* <Table users={users} /> */}
         </div>
     )
 }
