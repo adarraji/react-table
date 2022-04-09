@@ -1,4 +1,6 @@
 import React from "react";
+import FirstTab from "./FirstTab";
+import SecondTab from "./SecondTab";
 
 const Tabs = ({ activeTab }) => {
     return (
@@ -9,7 +11,8 @@ const Tabs = ({ activeTab }) => {
                 <li className={activeTab === "tab2" ? "active" : ""}>Tab 2</li>
             </ul>
             <div className="tab-content">
-                {/* content will be here*/}
+                <FirstTab />
+                <SecondTab />
             </div>
         </div>
     );
