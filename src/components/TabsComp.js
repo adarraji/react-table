@@ -1,9 +1,9 @@
 import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import Table from "./Table";
-import { users } from "../users";
 
-function TabsComp() {
+
+function TabsComp({ users }) {
     return (
         <Tabs className="Tabs">
             <TabList>

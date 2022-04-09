@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import TabsComp from "../components/TabsComp";
 import "./App.css";
+import { users } from "../users";
 
 class App extends Component {
     constructor() {
@@ -10,7 +11,7 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <TabsComp />
+                <TabsComp users={users} />
             </div >
         )
     }
