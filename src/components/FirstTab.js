@@ -2,7 +2,7 @@ import React from "react";
 
 const FirstTab = () => {
     return (
-        <div className="first-tab">
+        <div className="FirstTab">
             <p>First Tab !!!</p>
             {/* First tab content here */}
         </div>
