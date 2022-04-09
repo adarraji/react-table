@@ -5,8 +5,8 @@ const Tabs = ({ activeTab }) => {
         <div className="Tabs">
             {/* Tab Nav*/}
             <ul className="tab-nav">
-                <li>Tab 1</li>
-                <li>Tab 2</li>
+                <li className={activeTab === "tab1" ? "active" : ""}>Tab 1</li>
+                <li className={activeTab === "tab2" ? "active" : ""}>Tab 2</li>
             </ul>
             <div className="tab-content">
                 {/* content will be here*/}
