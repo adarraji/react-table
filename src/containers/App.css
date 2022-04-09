@@ -8,13 +8,14 @@
 /* App.js */
 .App {
     width: 100vw;
-    height: 100vw;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
 }
 
+/* Tabs Container */
 .Tabs {
     width: 80%;
     height: auto;
@@ -24,14 +25,13 @@
     padding: 2rem 1rem;
     color: #E8F0F2;
     border-radius: 2rem;
-
-    @media (max-width: 769px) {
-        padding: 2rem 0;
-    }
 }
 
-/* Tab Nav */
-ul.tab-nav {
+.react-tabs {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.react-tabs__tab-list {
     width: 60%;
     margin: 0 auto 2rem;
     display: flex;
@@ -40,13 +40,9 @@ ul.tab-nav {
     border: 1px solid #39A2DB;
     border-radius: 2rem;
     padding-left: 0px;
-
-    @media (max-width: 768px) {
-        width: 90%;
-    }
 }
 
-ul.tab-nav li {
+.react-tabs__tab {
     width: 50%;
     padding: 1rem;
     list-style: none;
@@ -55,28 +51,35 @@ ul.tab-nav li {
     transition: all 0.7s;
 }
 
-ul.tab-nav li:first-child {
+.react-tabs__tab--selected {
+    background: #39A2DB;
+}
+
+.react-tabs__tab--disabled {
+    color: GrayText;
+    cursor: default;
+}
+
+.react-tabs__tab:hover {
+    background: rgba(50, 224, 196, 0.15);
+}
+
+.react-tabs__tab:first-child {
     border-bottom-left-radius: 2rem;
     border-top-left-radius: 2rem;
 }
 
-ul.tab-nav li:last-child {
+.react-tabs__tab:last-child {
     border-bottom-right-radius: 2rem;
     border-top-right-radius: 2rem;
 }
 
-ul.tab-nav li:hover {
-    background: rgba(50, 224, 196, 0.15);
+.react-tabs__tab-panel {
+    display: none;
 }
 
-ul.tab-nav li.active {
-    background: #39A2DB;
-}
-
-
-/* First and Second Tab Styles */
-.FirstTab p,
-.SecondTab p {
+.react-tabs__tab-panel--selected {
+    display: block;
     font-size: 2rem;
     text-align: center;
 }
