@@ -6,7 +6,7 @@ import Tabs from "../components/Tabs";
 
 const App = () => {
     return (
-        <div>
+        <div className="App">
             <Tabs />
             <Table users={users} />
         </div>
