@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { users } from "../users";
 import Table from "../components/Table";
 import Tabs from "../components/Tabs";
+import TabNav from "../components/TabNav";
+import TabContent from "../components/TabContent";
 import "./App.css";
 
 
@@ -13,19 +15,16 @@ class App extends Component {
         }
     }
 
-    handleTab1 = () => this.setState({ activeTab: "tab1" });
-
-    handleTab2 = () => this.setState({ activeTab: "tab2" })
+    setActiveTab = (id) => {
+        this.setState({ activeTab: id });
+    }
 
 
 
     render() {
         const { activeTab } = this.state;
         return (
-            <div className="App">
-                <Tabs activeTab={activeTab} handleTab1={this.handleTab1} handleTab2={this.handleTab2} />
-                {/* <Table users={users} /> */}
-            </div>
+          
         )
     }
 }
