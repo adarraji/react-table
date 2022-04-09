@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { users } from "./users";
-import Table from "./Table";
+import { users } from "../users";
+import Table from "../components/Table";
 
 
 const App = () => {
