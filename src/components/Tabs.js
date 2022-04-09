@@ -1,6 +1,6 @@
 import React from "react";
 
-const Tabs = () => {
+const Tabs = ({ activeTab }) => {
     return (
         <div className="Tabs">
             {/* Tab Nav*/}

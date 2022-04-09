@@ -8,12 +8,17 @@ import "./App.css";
 class App extends Component {
     constructor() {
         super();
+        this.state = {
+            activeTab: "tab1"
+        }
     }
 
+
     render() {
+        const { activeTab } = this.state;
         return (
             <div className="App">
-                <Tabs />
+                <Tabs activeTab={activeTab} />
                 {/* <Table users={users} /> */}
             </div>
         )
