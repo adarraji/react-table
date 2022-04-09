@@ -27,6 +27,8 @@ class App extends Component {
             <div className="Tabs">
                 <ul tab-nav>
                     <TabNav title="Tab1" id="tab1" activeTab={activeTab} setActiveTab={this.setActiveTab} />
+                    <TabNav title="Tab2" id="tab2" activeTab={activeTab} setActiveTab={this.setActiveTab} />
+                    <TabNav title="Tab2" id="tab2" activeTab={activeTab} setActiveTab={this.setActiveTab} />
                 </ul>
 
             </div>
