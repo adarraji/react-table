@@ -83,3 +83,9 @@
     font-size: 2rem;
     text-align: center;
 }
+
+.table-style {
+    background: #053742;
+    color: #E8F0F2;
+    font-size: 50%;
+}

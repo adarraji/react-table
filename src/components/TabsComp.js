@@ -1,5 +1,7 @@
 import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import Table from "./Table";
+import { users } from "../users";
 
 function TabsComp() {
     return (
@@ -10,7 +12,7 @@ function TabsComp() {
                 <Tab>Tab 3</Tab>
             </TabList>
             <TabPanel>
-                <p>Tab 1 works!</p>
+                <Table users={users} />
             </TabPanel>
             <TabPanel>
                 <p>Tab 2 works!</p>
