@@ -24,7 +24,12 @@ class App extends Component {
     render() {
         const { activeTab } = this.state;
         return (
-          
+            <div className="Tabs">
+                <ul tab-nav>
+                    <TabNav title="Tab1" id="tab1" activeTab={activeTab} setActiveTab={this.setActiveTab} />
+                </ul>
+
+            </div>
         )
     }
 }
