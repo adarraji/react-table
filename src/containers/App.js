@@ -13,12 +13,17 @@ class App extends Component {
         }
     }
 
+    handleTab1 = () => this.setState({ activeTab: "tab1" });
+
+    handleTab2 = () => this.setState({ activeTab: "tab2" })
+
+
 
     render() {
         const { activeTab } = this.state;
         return (
             <div className="App">
-                <Tabs activeTab={activeTab} />
+                <Tabs activeTab={activeTab} handleTab1={this.handleTab1} handleTab2={this.handleTab2} />
                 {/* <Table users={users} /> */}
             </div>
         )
