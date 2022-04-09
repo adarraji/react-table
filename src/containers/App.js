@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { users } from "../users";
 import Table from "../components/Table";
 import Tabs from "../components/Tabs";
+import "./App.css";
 
 
 const App = () => {
