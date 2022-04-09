@@ -5,12 +5,19 @@ import Tabs from "../components/Tabs";
 import "./App.css";
 
 
-const App = () => {
-    return (
-        <div className="App">
-            <Tabs />
-            {/* <Table users={users} /> */}
-        </div>
-    )
+class App extends Component {
+    constructor() {
+        super();
+    }
+
+    render() {
+        return (
+            <div className="App">
+                <Tabs />
+                {/* <Table users={users} /> */}
+            </div>
+        )
+    }
 }
+
 export default App
