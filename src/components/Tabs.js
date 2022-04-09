@@ -2,7 +2,7 @@ import React from "react";
 
 const Tabs = () => {
     return (
-        <div className="tabs">
+        <div className="Tabs">
             {/* Tab Nav*/}
             <ul className="tab-nav">
                 <li>Tab 1</li>
