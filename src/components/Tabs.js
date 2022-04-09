@@ -11,8 +11,7 @@ const Tabs = ({ activeTab }) => {
                 <li className={activeTab === "tab2" ? "active" : ""}>Tab 2</li>
             </ul>
             <div className="tab-content">
-                <FirstTab />
-                <SecondTab />
+                {activeTab === "tab1" ? <FirstTab /> : <SecondTab />}
             </div>
         </div>
     );
