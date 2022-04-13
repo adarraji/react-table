@@ -1,5 +1,5 @@
 # React Table
-React web application to parse JSON Data into React Table Component
+React web application to parse JSON Data into React tabs and table components
 
 To run the application
 
@@ -13,4 +13,11 @@ To run the application
 * CSS
 * Javascript
 * React
-* Bootstrap classes
+* Bootstrap
+
+## Data Source
+
+This application shows users data from local `users.js` on the first tab, users data from external source on the second tab
+
+The external json data website used in this application is [JSON Placeholder](https://jsonplaceholder.typicode.com/)
+
