@@ -1,24 +1,24 @@
 import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import Table from "./Table";
+import UserTable from "./UserTable";
+import PostTable from "./PostTable";
 
-
-function TabsComp({ users }) {
+function TabsComp({ users, usersExternal, posts, albums }) {
     return (
         <Tabs className="Tabs">
             <TabList>
-                <Tab>Tab 1</Tab>
-                <Tab>Tab 2</Tab>
-                <Tab>Tab 3</Tab>
+                <Tab>Users</Tab>
+                <Tab>Users External</Tab>
+                <Tab>Posts External</Tab>
             </TabList>
             <TabPanel>
-                <Table users={users} />
+                <UserTable users={users} />
             </TabPanel>
             <TabPanel>
-                <p>Tab 2 works!</p>
+                <UserTable users={usersExternal} />
             </TabPanel>
             <TabPanel>
-                <p>Tab 3 works!</p>
+                <PostTable posts={posts} />
             </TabPanel>
         </Tabs>
 

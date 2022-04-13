@@ -1,6 +1,6 @@
 import React from "react";
 
-const Table = ({ users }) => {
+const UserTable = ({ users }) => {
     const tableData = users.map(user => {
         return (
             <tr>
@@ -14,7 +14,7 @@ const Table = ({ users }) => {
     return (
         <div>
             <table className="table-style table table-bordered ">
-                <thead>
+                <thead key="1">
                     <tr>
                         <th>ID</th>
                         <th>Name</th>
@@ -31,4 +31,4 @@ const Table = ({ users }) => {
 
 }
 
-export default Table
+export default UserTable
