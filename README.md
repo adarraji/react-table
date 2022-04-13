@@ -25,6 +25,6 @@ The external json data website used in this application is [JSON Placeholder](ht
 
 ![Tab 1](./images/tab-01.png)
 
-![Tab 1](./images/tab-02.png)
+![Tab 2](./images/tab-02.png)
 
-![Tab 1](./images/tab-03.png)
+![Tab 3](./images/tab-03.png)
